@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>电影数据分析</title>
+    <script src="../lib/echarts.js" charset="utf-8"></script>
+    <script src="../lib/echarts-wordcloud.min.js" charset="utf-8"></script>
+    <style media="screen">
+      div{
+        /* border: 1px solid red; */
+      }
+      .container{
+        /* margin：0 auto; */
+
+      }
+      .show-container {
+        width: 852px;
+        margin: 0 auto;
+      }
+      .left{
+        width: 852px;
+        height: 521px;
+        margin-top: 50px;
+      }
+      .center{
+        width: 852px;
+        height: 521px;
+        margin-top: 50px;
+      }
+      .right{
+        width: 852px;
+        height: 500px;
+        margin-top: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="show-container">
+        <div class="left"></div>
+
+        <div class="center"></div>
+
+        <div class="right"></div>
+      </div>
+    </div>
+    <script src="../src/showData.js" charset="utf-8"></script>
+    <script src="./api/yearStar.json?callback=yearStarCallBack"></script>
+    <script src="./api/tags.json?callback=tagCallBack"></script>
+  </body>
+</html>
